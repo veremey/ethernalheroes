@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Ethernium</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="static/img/favicon.png">
+    <link rel="stylesheet" media="all" href="static/css/style.css">
+    <script src="static/js/lib/jquery.js"></script>
+    <script src="static/js/lib/TweenMax.min.js"></script>
+    <script src="static/js/lib/ScrollMagic.js"></script>
+    <script src="static/js/lib/animation.gsap.js"></script>
+    <script src="static/js/lib/classie.js"></script>
+    <script src="static/js/lib/jquery.validate.min.js"></script>
+    <script src="static/js/animation.js"></script>
+    <script src="static/js/init__animation.js"></script>
+    <script src="static/js/init-validate.js"></script>
+    <script src="static/js/common.js"></script>
+  </head>
+  <body class="is-animated">
+    <!--BEGIN out-->
+    <div class="out">
+      <header class="header">
+        <a class="btn-toggler" href="#"></a>
+        <div class="header__wrap">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#">Features</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Roadmap</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Team</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="lang">
+            <a class="lang__link" href="#">ENg</a>
+          </div>
+        </div>
+      </header>
+      <section class="startscreen">
+        <section class="intro is-animated">
+          <a class="logo" href="index.html">
+            <img class="logo__pic" src="static/img/logo.png" alt="logo">
+          </a>
+          <p class="intro__desc">Коллекционный карточный батлер
+            <br> на блокчейн с возможностью заработать
+            <br> для мобильных и настольных платформ</p>
+        </section>
+        <section class="play is-animated">
+          <div class="play__box">
+            <div class="play__pic">
+              <img class="play__img" src="static/img/macbook.png" alt="macbook">
+              <img class="pocket pocket-01" src="static/img/card/01.png" alt="card">
+              <img class="pocket pocket-02" src="static/img/card/02.png" alt="card">
+            </div>
+            <div class="play__text">
+              <img class="play__icon shadow-navy" src="static/img/icon-gold.png">
+              <p class="play__desc">Зарабатывай,
+                <br> играя
+                <br> на десктопе</p>
+            </div>
+          </div>
+          <div class="play__box">
+            <div class="play__pic">
+              <img class="play__img" src="static/img/macbook.png" alt="macbook">
+              <img class="pocket pocket-01" src="static/img/card/01.png" alt="card">
+              <img class="pocket pocket-02" src="static/img/card/02.png" alt="card">
+              <img class="pocket-phone" src="static/img/card/phone.png" alt="card">
+            </div>
+            <div class="play__text">
+              <img class="play__icon shadow-green" src="static/img/45.png">
+              <p class="play__desc">Играй
+                <br> на мобильном
+                <br> телефоне</p>
+              <div class="app">
+                <a class="app__link" href="#">
+                  <img class="app__img" src="static/img/app-store.jpg">
+                </a>
+                <a class="app__link" href="#">
+                  <img class="app__img" src="static/img/app-play.jpg">
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="hell">
+        <section class="about layout is-animated">
+          <h3 class="title-section">
+            <img class="title-img shadow-fiolet" src="static/img/title/01.png">
+            <span>About</span>
+          </h3>
+          <div class="card">
+            <div class="card__pic">
+              <img class="card__img" src="static/img/about/01.png">
+            </div>
+            <div class="card__text">
+              <h5 class="title-medium">Присоединяйся к битве!</h5>
+              <p class="card__desc">Мир Ethernium раздирает бесконечная, разрушающая все на своем пути война. Коварные,беспощадные, легионы непобедимых демонов готовятся стереть с лица земли всё живое. В эпоху бесконечной войны выживание зависит только от вашей храбрости и
+                победной стратегии…</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__pic">
+              <img src="static/img/about/02.png">
+              <img class="card__pic_01" src="static/img/about/02-1.png">
+            </div>
+            <div class="card__text">
+              <h5 class="title-medium">Выбери одну
+                <br> из четырех фракций!</h5>
+              <p class="card__desc">Мир Ethernium раздирает бесконечная, разрушающая все на своем пути война. Коварные,беспощадные, легионы непобедимых демонов готовятся стереть с лица земли всё живое. В эпоху бесконечной войны выживание зависит только от вашей храбрости и
+                победной стратегии…</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__pic">
+              <img src="static/img/about/03.png">
+            </div>
+            <div class="card__text">
+              <h5 class="title-medium">Призови героя возглавить
+                <br> твое войско!</h5>
+              <p class="card__desc">Пусть ваши войска сражаются бок о бок с сильнейшими героями. Закаленные в битвах храбрецы, чей уровень растет с каждым боем, могут применять заклинания, усиливать войска и вселять ужас в ваших врагов.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__pic">
+              <img src="static/img/about/04.png">
+            </div>
+            <div class="card__text">
+              <h5 class="title-medium">Прими участие в эпических
+                <br> событиях!</h5>
+              <p class="card__desc">Перед вашими глазами пройдут события целой исторической эпохи Ethernium.</p>
+              <p class="card__desc">В процессе прохождения сюжета вы узнаете о тайне открытия врат между мирами, трагическом уничтожении королевства эльфов, предательстве инквизитора Эриния (Erinyes) и битве всех королевств у врат гнева.</p>
+            </div>
+          </div>
+        </section>
+        <section class="features layout is-animated">
+          <h3 class="title-section">
+            <img class="title-img shadow-blue" src="static/img/title/02.png">
+            <span>Features</span>
+          </h3>
+          <div class="module">
+            <div class="module__item shadow-aquamarine">
+              <div class="module__pic">
+                <img class="module__img shadow-aquamarine" src="static/img/pic/01.png" alt="feature">
+              </div>
+              <div class="module__text">
+                <h5 class="title-medium">Gamplay</h5>
+                <p class="module__text">Простая и понятная система тактического боя.</p>
+              </div>
+            </div>
+            <div class="module__item shadow-red">
+              <div class="module__pic">
+                <img class="module__img shadow-red" src="static/img/pic/02.png" alt="feature">
+              </div>
+              <div class="module__text">
+                <h5 class="title-medium">Collection</h5>
+                <p class="module__text">Простая и понятная система тактического боя.</p>
+              </div>
+            </div>
+            <div class="module__item shadow-blue">
+              <div class="module__pic">
+                <img class="module__img shadow-blue" src="static/img/pic/03.png" alt="feature">
+              </div>
+              <div class="module__text">
+                <h5 class="title-medium">Unique</h5>
+                <p class="module__text">Простая и понятная система тактического боя.</p>
+              </div>
+            </div>
+            <div class="module__item shadow-fiolet">
+              <div class="module__pic">
+                <img class="module__img shadow-fiolet" src="static/img/pic/04.png" alt="feature">
+              </div>
+              <div class="module__text">
+                <h5 class="title-medium">Limited</h5>
+                <p class="module__text">Простая и понятная система тактического боя.</p>
+              </div>
+            </div>
+            <div class="module__item shadow-halk">
+              <div class="module__pic">
+                <img class="module__img shadow-halk" src="static/img/pic/05.png" alt="feature">
+              </div>
+              <div class="module__text">
+                <h5 class="title-medium">Mining</h5>
+                <p class="module__text">Простая и понятная система тактического боя.</p>
+              </div>
+            </div>
+            <div class="module__item shadow-purpur">
+              <div class="module__pic">
+                <img class="module__img shadow-purpur" src="static/img/pic/06.png" alt="feature">
+              </div>
+              <div class="module__text">
+                <h5 class="title-medium">Blockchain</h5>
+                <p class="module__text">Простая и понятная система тактического боя.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="roadmap is-animated">
+          <div class="layout">
+            <h3 class="title-section">
+              <img class="title-img shadow-aquamarine" src="static/img/title/03.png">
+              <span>Roadmap</span>
+            </h3>
+            <div class="road">
+              <div class="road__top">
+                <div class="road__box road__box-01">
+                  <div class="road__point"></div>
+                  <div class="road__text">
+                    <h6 class="road__title">Июнь 2017</h6>
+                    <p class="road__desc">Идея проекта, разработка концепции</p>
+                  </div>
+                </div>
+                <div class="road__box road__box-02">
+                  <div class="road__point"></div>
+                  <div class="road__text">
+                    <h6 class="road__title">Июль 2017</h6>
+                    <p class="road__desc">Сформирована команда проекта</p>
+                  </div>
+                </div>
+                <div class="road__box road__box-03">
+                  <div class="road__point"></div>
+                  <div class="road__text">
+                    <h6 class="road__title">Август 2017</h6>
+                    <p class="road__desc">Начало разработки игры, pre-sale</p>
+                  </div>
+                </div>
+                <div class="road__box road__box-04">
+                  <div class="road__point"></div>
+                  <div class="road__text">
+                    <h6 class="road__title">Октябрь 2017</h6>
+                    <p class="road__desc">Crowdsale</p>
+                  </div>
+                </div>
+                <div class="road__box road__box-05">
+                  <div class="road__point"></div>
+                  <div class="road__text">
+                    <h6 class="road__title">Январь 2018</h6>
+                    <p class="road__desc">Демо build</p>
+                  </div>
+                </div>
+              </div>
+              <div class="road__bottom">
+                <div class="road__box road__box-06">
+                  <div class="road__point"></div>
+                  <div class="road__text">
+                    <h6 class="road__title">Апрель 2018</h6>
+                    <p class="road__desc">Альфа-версия</p>
+                  </div>
+                </div>
+                <div class="road__box road__box-07">
+                  <div class="road__point"></div>
+                  <div class="road__text">
+                    <h6 class="road__title">Июль 2018</h6>
+                    <p class="road__desc">Soft launch</p>
+                  </div>
+                </div>
+                <div class="road__box road__box-08">
+                  <div class="road__point"></div>
+                  <div class="road__text">
+                    <h6 class="road__title">Октябрь 2018</h6>
+                    <p class="road__desc">Global launch</p>
+                  </div>
+                </div>
+                <div class="road__box road__box-09">
+                  <div class="road__point"></div>
+                  <div class="road__text">
+                    <h6 class="road__title">Декабрь 2018</h6>
+                    <p class="road__desc">Запуск токенов</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img class="road-bg" src="static/img/sun.png">
+        </section>
+        <section class="team layout is-animated">
+          <h3 class="title-section">
+            <img class="title-img shadow-yellow" src="static/img/title/04.png">
+            <span>Team</span>
+          </h3>
+          <div class="box-black">
+            <div class="people">
+              <div class="people__pic">
+                <img class="people__img" src="static/img/people/01.jpg" alt="FOUNDER &amp; CEO">
+              </div>
+              <div class="people__name">
+                <h6 class="people__title">Иван Петров
+                  <a class="people__title_social" href="#">
+                    <img class="icon-in" src="static/img/title/icon-in.png">
+                  </a>
+                </h6>
+                <div class="people__status">FOUNDER &amp; CEO</div>
+              </div>
+              <div class="people__info">Операционная деятельность и ключевые стратегические решения в компании. </div>
+            </div>
+            <div class="people">
+              <div class="people__pic">
+                <img class="people__img" src="static/img/people/02.jpg" alt="CO-FOUNDER, CFO">
+              </div>
+              <div class="people__name">
+                <h6 class="people__title">Константин Плавник
+                  <a class="people__title_social" href="#">
+                    <img class="icon-in" src="static/img/title/icon-in.png">
+                  </a>
+                </h6>
+                <div class="people__status">CO-FOUNDER, CFO</div>
+              </div>
+              <div class="people__info">Инвестиционный консультант, опыт в прямых инвестициях и корпоративных финансах более 10 лет.</div>
+            </div>
+            <div class="people">
+              <div class="people__pic">
+                <img class="people__img" src="static/img/people/03.jpg" alt="PR&amp;MARKETING DIRECTOR">
+              </div>
+              <div class="people__name">
+                <h6 class="people__title">Андрей Рыбушкин
+                  <a class="people__title_social" href="#">
+                    <img class="icon-in" src="static/img/title/icon-in.png">
+                  </a>
+                </h6>
+                <div class="people__status">PR&amp;MARKETING DIRECTOR</div>
+              </div>
+              <div class="people__info">Аккаунт-директор рекламного агентства, Болле 15 лет опыта в разработке, запуске и продвижении digital-проектов.</div>
+            </div>
+            <div class="people people_simple">
+              <div class="people__pic">
+                <img class="people__img" src="static/img/people/01.jpg" alt="FOUNDER &amp; CEO">
+              </div>
+              <div class="people__name">
+                <h6 class="people__title">Иван Петров</h6>
+                <div class="people__status">FOUNDER &amp; CEO</div>
+              </div>
+            </div>
+            <div class="people people_simple">
+              <div class="people__pic">
+                <img class="people__img" src="static/img/people/02.jpg" alt="CO-FOUNDER, CFO">
+              </div>
+              <div class="people__name">
+                <h6 class="people__title">Константин Плавник </h6>
+                <div class="people__status">CO-FOUNDER, CFO</div>
+              </div>
+            </div>
+            <div class="people people_simple">
+              <div class="people__pic">
+                <img class="people__img" src="static/img/people/03.jpg" alt="PR&amp;MARKETING DIRECTOR">
+              </div>
+              <div class="people__name">
+                <h6 class="people__title">Андрей Рыбушкин</h6>
+                <div class="people__status">PR&amp;MARKETING DIRECTOR</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="advisors layout">
+          <h3 class="title-section">
+            <img class="title-img shadow-fiolet" src="static/img/title/05.png">
+            <span>Advisors</span>
+          </h3>
+          <div class="box-transparent">
+            <div class="people people_row">
+              <div class="people__pic">
+                <img class="people__img" src="static/img/people/01.jpg" alt="FOUNDER &amp; CEO">
+              </div>
+              <div class="people__name">
+                <h6 class="people__title">Иван Петров
+                  <a class="people__title_social" href="#">
+                    <img class="icon-in" src="static/img/title/icon-in.png">
+                  </a>
+                </h6>
+                <div class="people__status">FOUNDER &amp; CEO</div>
+              </div>
+            </div>
+            <div class="people people_row">
+              <div class="people__pic">
+                <img class="people__img" src="static/img/people/02.jpg" alt="CO-FOUNDER, CFO">
+              </div>
+              <div class="people__name">
+                <h6 class="people__title">Константин Плавник
+                  <a class="people__title_social" href="#">
+                    <img class="icon-in" src="static/img/title/icon-in.png">
+                  </a>
+                </h6>
+                <div class="people__status">CO-FOUNDER, CFO</div>
+              </div>
+            </div>
+            <div class="people people_row">
+              <div class="people__pic">
+                <img class="people__img" src="static/img/people/03.jpg" alt="PR&amp;MARKETING DIRECTOR">
+              </div>
+              <div class="people__name">
+                <h6 class="people__title">Андрей Рыбушкин
+                  <a class="people__title_social" href="#">
+                    <img class="icon-in" src="static/img/title/icon-in.png">
+                  </a>
+                </h6>
+                <div class="people__status">PR&amp;MARKETING DIRECTOR</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="subscribe">
+          <div class="subscribe__box">
+            <h6 class="subscribe__title">Подпишитесь на новости</h6>
+            <form class="subscribe__form js-validate" action="/" method="POST">
+              <fieldset class="subscribe__fieldset">
+                <input class="subscribe__input" type="email" name="mail">
+                <label class="subscribe__label" for="email">Введите почту</label>
+                <button class="subscribe__submit" type="submit">Подписаться</button>
+              </fieldset>
+            </form>
+            <div class="social">
+              <div class="social__btn facebook">
+                <img class="social__pic" src="static/img/social/facebook.png" alt="">
+              </div>
+              <div class="social__btn vkontakte">
+                <img class="social__pic" src="static/img/social/vk.png" alt="">
+              </div>
+              <div class="social__btn youtube">
+                <img class="social__pic" src="static/img/social/youtube.png" alt="">
+              </div>
+              <div class="social__btn instagram">
+                <img class="social__pic" src="static/img/social/instagram.png" alt="">
+              </div>
+              <div class="social__btn telegram">
+                <img class="social__pic" src="static/img/social/telegramm.png" alt="">
+              </div>
+            </div>
+          </div>
+          <img class="subscribe-bg" src="static/img/sub-bg.jpg" alt="">
+        </section>
+      </section>
+      <footer class="footer">
+        <a class="footer__logo" href="index.html">
+          <img src="static/img/logo.png" alt="logo">
+        </a>
+        <nav class="footer__nav">
+          <a class="footer__nav_link" href="#">Features</a>
+          <a class="footer__nav_link" href="#">Roadmap</a>
+          <a class="footer__nav_link" href="#">Team</a>
+          <a class="footer__nav_link" href="#">Contact</a>
+        </nav>
+        <div class="copy">
+          <p class="copy__desc">&copy; All Rights Reserved. Enhernal Heroes Co.</p>
+          <a class="copy__link" href="mailto:info@ethernalheroes.com">info@ethernalheroes.com</a>
+        </div>
+      </footer>
+    </div>
+    <!--END out-->
+  </body>
+</html>

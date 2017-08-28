@@ -1,0 +1,45 @@
+# юТека
+
+## Technologies
+
+* SASS
+
+* CSS3
+
+* HTML5
+
+* bem
+
+* jQuery
+
+### Packege maneger
+
+* npm
+
+### Automatization
+
+* gulp
+
+## Contacts
+
+Skype: baxazar
+
+Email: [veremey4uk@gmail.com](mailto:veremey4uk@gmail.com)
+
+## Как это использовать
+
+Установить локально gulp выполнив следующие команды:
+
+1. *npm install gulp*
+
+Установить плагины
+
+1. *npm install*
+
+### Плюшки
+
+* Валидация [jquery.validate.min.js](http://jqueryvalidation.org/)
+
+* Анимация лейбла для формы [classie.js](https://github.com/desandro/classie)
+
+* Анимации появления элементов

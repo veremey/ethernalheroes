@@ -1,0 +1,110 @@
++font('Roboto-Regular-webfont', 'Roboto-Regular-webfont')
++font('apercu_regular_pro', 'apercu_regular_pro')
+
+=rr
+	font-family: 'Roboto-Regular-webfont', Arial, sans-serif
+=ar
+	font-family: 'apercu_regular_pro', Arial, sans-serif
+
+
+// colors
+$n: transparent
+$body: #060910
+$text: #fff
+
+@function get-vh($target)
+	$vh-context: (1000*.0086) * 1px
+	@return ($target/$vh-context) * 1vh
+
+
+// size
+// $max-width: 320px
+
+html
+	+selection
+		background: rgba(0, 0, 0, .2)
+		color: #fff
+
+html,
+body
+	width: 100%
+	height: 100%
+	background-color: $body
+	min-width: 260px
+	font-size: 18px
+	line-height: 1.22
+	color: #fff
+	-webkit-font-smoothing: antialiased
+
+
+.not-move
+	// overflow: hidden
+	position: fixed
+	padding-right: 17px
+
+
+// test center
+%center
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		top: 50%
+		left: 0
+		right: 0
+		height: 2px
+		background-color: red
+		+try(-50%)
+		z-index: 20
+
+// common blocks
+.out
+	position: relative
+	+clr
+	&_partner
+		min-height: 100vh
+		padding-bottom: 113px
+		+r(800)
+			padding-bottom: 145px
+
+
+.layout
+	max-width: 1060px
+	width: 96%
+	margin: 0 auto
+	+clr
+	+r(800)
+		width: 100%
+		padding: 0 20px
+
+%gradient
+	background: #4cc594 linear-gradient(135deg,#44bf90,#5aa464)
+	// +gh(#4cc594, #5fa669)//old
+a
+	text-decoration: none
+	outline: none
+
+h1, h2, h3, h4, h5, h6
+	margin: 0 0 .8em
+	font-weight: normal
+	line-height: 1.1
+h1
+	font-size: 2em
+h2
+	font-size: 1.8em
+h3
+	font-size: 1.6em
+h4
+	font-size: 1.5em
+h5
+	font-size: 1.4em
+h6
+	font-size: 1.3em
+
+b, strong
+	font-weight: normal
+
+p
+	margin-bottom: 0
+	&.mod-last
+		margin-bottom: 40px

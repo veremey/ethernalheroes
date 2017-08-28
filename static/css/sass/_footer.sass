@@ -1,0 +1,41 @@
+.footer
+	display: flex
+	align-items: center
+	justify-content: space-between
+	background-color: #2a292a
+	padding: 30px 40px
+	+r(650)
+		flex-direction: column
+	&__logo
+		display: inline-block
+		width: 78px
+		img
+			max-width: 100%
+	&__nav
+		display: flex
+		align-items: center
+		justify-content: space-between
+		width: 50%
+		max-width: 540px
+		+r(680)
+			display: none
+		&_link
+			font-size: 14px
+			color: #b8b7b8
+			+rr
+
+.copy
+	text-align: right
+	+r(650)
+		text-align: center
+	&__desc,
+	&__link
+		font-size: 9px
+		color: #8c8b8c
+		+r(650)
+			margin: 10px
+
+	&__link
+		+tr(.4s)
+		&:hover
+			color: #fff

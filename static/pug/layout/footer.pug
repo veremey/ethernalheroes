@@ -1,0 +1,10 @@
+footer.footer
+	//- .footer__wrap
+	a(href="index.html").footer__logo
+		img(src="static/img/logo.png", alt="logo")
+	nav.footer__nav
+		each sector in nav
+			a(href="#").footer__nav_link #{sector}
+	.copy
+		p.copy__desc &copy; All Rights Reserved. Enhernal Heroes Co.
+		a(href="mailto:info@ethernalheroes.com").copy__link info@ethernalheroes.com

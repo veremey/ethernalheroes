@@ -1,0 +1,14 @@
+//- -var nav = ['Features', 'Roadmap', 'Team', 'Contact'];
+
+block headScript
+
+header.header
+	a(href="#").btn-toggler
+	.header__wrap
+		nav.nav
+			ul.nav__list
+				each item in nav
+					li.nav__item
+						a(href="#").nav__link #{item}
+		.lang
+			a(href="#").lang__link ENg

@@ -1,0 +1,41 @@
+.btn-toggler
+	display: none
+	position: fixed
+	width: 40px
+	height: 25px
+	background-color: transparent
+	border: none
+	outline: none
+	+r(650)
+		display: inline-block
+		margin: 25px 0 20px 30px
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		width: 40px
+		height: 5px
+		background: #fff
+		+tr(.4s)
+	&:after
+		content: ''
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		width: 40px
+		height: 5px
+		background: #fff
+		+tr(.4s)
+	&.is-active
+		&:before
+			top: 8px
+			left: 2px
+			transform-origin: top center
+			transform: rotate(40deg)
+		&:after
+			bottom: 12px
+			transform-origin: top center
+			transform: rotate(-40deg)

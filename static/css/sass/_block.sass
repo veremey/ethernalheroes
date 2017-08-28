@@ -1,0 +1,878 @@
+.startscreen
+	position: relative
+	padding-top: 100px
+	background: #060910 url('../img/bg-01.jpg') 0 0 repeat-y
+	background-size: cover
+	+r(650)
+		padding-top: 0
+
+.intro
+	margin: 100px 0 40px
+	text-align: center
+	+r(650)
+		margin-top: 0
+	&__desc
+		width: 90%
+		max-width: 635px
+		margin: 0 auto
+		letter-spacing: .02em
+		font-size: 32px
+		+ar
+		opacity: 0
+		transform: translateY(-100px)
+		+tr(.4s .8s)
+		&.is-animated
+			transform: translateY(0px)
+			opacity: 1
+
+.logo
+	display: inline-block
+	width: 60%
+	max-width: 250px
+	margin: 45px auto 40px
+	transform: perspective(1000px) rotateY(90deg)
+	transition: .6s .8s
+	+r(650)
+		margin-top: 15px
+	&__pic
+		max-width: 100%
+	&.is-animated
+		transform: perspective(1000px) rotateY(0deg)
+		animation-timing-function: ease-in
+
+		// animation: 2s flip  ease-in-out infinite
+		// transform-origin: 50% 50% 0
+		// visibility: visible
+		// transform-style: preserve-3d
+
+.play
+	&__box
+		position: relative
+		padding-bottom: 70px
+	&__pic
+		position: relative
+		display: inline-block
+		vertical-align: top
+		margin-top: 240px
+		width: 66%
+		font-size: 0
+		opacity: 0
+		transform: translateY(-60px)
+		transition: .6s .6s
+		+r(800)
+			width: 100%
+			margin-top: 80px
+		&.is-animated
+			opacity: 1
+			transform: translate( 0, 0)
+	&__img
+		display: inline-block
+		vertical-align: top
+		width: 100%
+	&__text
+		position: absolute
+		top: 250px
+		right: 6%
+		width: 36%
+		text-align: center
+		opacity: 0
+		transform: translateY(-60px)
+		transition: .6s .5s
+		+r(800)
+			position: relative
+			width: 100%
+			top: auto
+			right: auto
+			margin-top: 60px
+		&.is-animated
+			opacity: 1
+			transform: translate( 0, 0)
+
+	&__icon
+		display: inline-block
+		margin: 0 auto 24px
+		max-width: 40%
+		+r(800)
+			max-width: 28%
+		// filter: drop-shadow( 0 0 60px red)
+	&__desc
+		text-align: left
+		font-size: 5vw
+		line-height: 1.1
+		letter-spacing: .02em
+		color: #fff
+		+ar
+		text-shadow: 0 0 50px #e07049
+		+r(800)
+			text-align: center
+			font-size: 8vw
+
+.shadow
+	&-navy
+		filter: drop-shadow(0 0 60px #2fc3a9)
+	&-green
+		filter: drop-shadow(0 0 60px #25f539)
+	&-fiolet
+		filter: drop-shadow(0 0 20px #b38ee5)
+	&-yellow
+		filter: drop-shadow(0 0 10px #ef740d)
+	&-aquamarine
+		filter: drop-shadow(0 0 10px rgba(0, 181, 138, .5))
+	&-red
+		filter: drop-shadow(0 0 10px rgba(236, 74, 47, .5))
+	&-blue
+		filter: drop-shadow(0 0 10px rgba(1, 113, 188, .5))
+	&-fiolet
+		filter: drop-shadow(0 0 10px rgba(74, 72, 203, .5))
+	&-halk
+		filter: drop-shadow(0 0 10px rgba(51, 117, 0, .5))
+	&-purpur
+		filter: drop-shadow(0 0 10px rgba(189, 45, 168, .5))
+
+.module__item
+	&.shadow
+		&-navy
+			filter: none
+			box-shadow: 0 0 60px #2fc3a9
+		&-green
+			filter: none
+			box-shadow: 0 0 60px #25f539
+		&-fiolet
+			filter: none
+			box-shadow: 0 0 20px #b38ee5
+		&-aquamarine
+			filter: none
+			box-shadow: 0 0 40px rgba(0, 181, 138, .3)
+		&-red
+			filter: none
+			box-shadow: 0 0 40px rgba(236, 74, 47, .3)
+		&-blue
+			filter: none
+			box-shadow: 0 0 40px rgba(1, 113, 188, .3)
+		&-fiolet
+			filter: none
+			box-shadow: 0 0 40px rgba(74, 72, 203, .3)
+		&-halk
+			filter: none
+			box-shadow: 0 0 40px rgba(51, 117, 0, .3)
+		&-purpur
+			filter: none
+			box-shadow: 0 0 40px rgba(189, 45, 168, .3)
+
+.pocket
+	max-width: 16%
+	&-01
+		position: absolute
+		top: -30px
+		left: 30%
+	&-02
+		position: absolute
+		top: -5px
+		left: calc(30% + 10%)
+	&-phone
+		position: absolute
+		top: 46%
+		left: 64%
+		width: 50%
+		transform: translate(-50%, -50%)
+
+.app
+	display: flex
+	justify-content: space-between
+	margin-top: 50px
+	+r(400)
+		flex-wrap: wrap
+		justify-content: center
+	&__link
+		display: inline-block
+		width: 48%
+		height: 50px
+		font-size: 0
+		+tr(.4s)
+		+r(400)
+			margin: 6px 10px
+		&:hover
+			opacity: .8
+
+	&__img
+		display: inline-block
+		vertical-align: top
+		max-width: 100%
+		max-height: 100%
+		border-radius: 6px
+		overflow: hidden
+		box-shadow: 0 0 10px 2px rgba(26, 94, 186, .6)
+
+.hell
+	background: #19181d url('../img/texture-01.jpg') 0 0 repeat-y
+	background-size: contain
+	padding: 1px
+
+.about
+	font-size: 0
+
+.card
+	display: inline-block
+	vertical-align: top
+	float: left
+	width: 49%
+	border-radius: 12px
+	background-color: rgba(0, 0, 0, .36)
+	padding: 40px 15px 80px
+	margin-bottom: 50px
+	text-align: center
+	opacity: 0
+	transform: translateY(-100px)
+	+tr(.4s .8s)
+	&:nth-of-type(2)
+		margin-top: 110px
+	&:nth-of-type(even)
+		margin-left: 2%
+		float: right
+	&.is-animated
+		transform: translateY(0px)
+		opacity: 1
+	+r(800)
+		width: 100%
+		margin: 20px 0 0 !important
+	&__pic
+		position: relative
+		display: inline-block
+		max-width: 90%
+		margin-bottom: 30px
+		&_01
+			position: absolute
+			top: -140px
+			left: 50%
+			+trx(-25%)
+			width: 60%
+		img
+			max-width: 100%
+	&__desc
+		font-size: 18px
+		letter-spacing: .02em
+		color: #ebebeb
+		+ar
+
+.module
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	padding: 40px 40px 0
+	+r(400)
+		padding: 40px 0 0
+	&__item
+		position: relative
+		display: inline-block
+		width: 250px
+		text-align: center
+		background-color: rgba(7, 10, 19, .8)
+		padding: 0px 25px 30px
+		margin-bottom: 70px
+		border-radius: 20px
+		opacity: 0
+		transform: translateY(-100px)
+		+tr(.4s .8s)
+		+r(650)
+			width: 100%
+			&:last-child
+				margin-bottom: 0
+		&.is-animated
+			transform: translateY(0px)
+			opacity: 1
+	&__pic
+		width: 150px
+		display: inline-block
+		font-size: 0
+		+try(-30px)
+	&__img
+		max-width: 100%
+
+.roadmap
+	position: relative
+	overflow: hidden
+
+.road
+	position: relative
+	height: 600px
+	padding: 20px 20% 0
+	+r(800)
+		height: auto
+	+r(400)
+		padding: 20px 20px 0
+	&__top
+		display: inline-block
+		vertical-align: top
+		width: 70%
+		height: 330px
+		position: relative
+		+r(800)
+			height: auto
+			width: 100%
+	&__bottom
+		display: inline-block
+		vertical-align: top
+		width: 58%
+		height: 260px
+		position: relative
+		+r(800)
+			height: auto
+			width: 100%
+	&__point
+		display: inline-block
+		position: absolute
+		width: 6px
+		height: 6px
+		border-radius: 100%
+		box-shadow: 0 0 4px 16px rgba(0, 0, 0, 1)
+		z-index: 10
+	&__title
+		font-size: 14px
+		margin-bottom: 5px
+		font-weight: 600
+		color: #fff
+		+ar
+	&__desc
+		font-size: 18px
+		color: #d7d7d7
+		+ar
+	&__box
+		opacity: 0
+		transform: translateY(-100px)
+		+tr(.4s .8s)
+		&.is-animated
+			transform: translateY(0px)
+			opacity: 1
+		+r(800)
+			display: block
+			position: relative
+			width: 100%
+			height: auto
+			min-height: 100px
+			top: 0
+			padding-left: 40px
+			padding-bottom: 20px
+			bottom: auto
+			left: auto
+			right: auto
+			// height: auto
+			border: none
+			text-align: left
+			.road__text
+				position: relative
+				top: 0
+				left: auto
+				right: auto
+		&-01
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 80px
+			// border-top: 2px solid #fff
+			&:before
+				content: ''
+				position: absolute
+				top: 0
+				left: 40px
+				right: 20px
+				height: 2px
+				background-image: linear-gradient(left, transparent 0%,#c9d0d6 26%,#f7f7ff 89%,transparent 100%)
+				+r(800)
+					content: ''
+					position: absolute
+					top: 30px
+					bottom: 30px
+					left: 0
+					width: 1px
+					height: auto
+					background-image: linear-gradient(top, transparent 0%,#c9d0d6 26%,#f7f7ff 89%,transparent 100%)
+			.road
+				&__point
+					top: -6px
+					left: -20px
+					background-color: #DE0284
+					+r(800)
+						top: 3px
+						left: -3px
+				&__text
+					position: absolute
+					top: 30px
+					left: -40px
+		&-02
+			position: absolute
+			top: 0
+			left: 100%
+			width: 80%
+			height: 80px
+			padding-left: 40px
+			// border-top: 2px solid #fff
+			// border-left: 2px solid #fff
+			&:before
+				content: ''
+				position: absolute
+				top: 30px
+				bottom: 30px
+				left: 0
+				width: 2px
+				background-image: linear-gradient(top, transparent 0%,#c9d0d6 26%,#f7f7ff 89%,transparent 100%)
+			.road
+				&__point
+					top: -2px
+					left: -3px
+					background-color: #9205C7
+					+r(800)
+						top: 3px
+						left: -3px
+		&-03
+			position: absolute
+			top: 80px
+			left: 100%
+			width: 80%
+			height: 80px
+			padding-left: 40px
+			// border-left: 2px solid #fff
+			&:before
+				content: ''
+				position: absolute
+				top: 30px
+				bottom: 30px
+				left: 0
+				width: 2px
+				background-image: linear-gradient(top, transparent 0%,#c9d0d6 26%,#f7f7ff 89%,transparent 100%)
+			.road
+				&__point
+					top: -2px
+					left: -3px
+					background-color: #0A3E9F
+					+r(800)
+						top: 3px
+						left: -3px
+		&-04
+			position: absolute
+			bottom: 80px
+			right: 0
+			width: 60%
+			height: 80px
+			text-align: right
+			padding-right: 40px
+			border-right: 2px solid #fff
+			border-bottom: 2px solid #fff
+			+r(800)
+				&:before
+					content: ''
+					position: absolute
+					top: 30px
+					bottom: 30px
+					left: 0
+					width: 1px
+					height: auto
+					background-image: linear-gradient(top, transparent 0%,#c9d0d6 26%,#f7f7ff 89%,transparent 100%)
+			.road
+				&__point
+					top: -2px
+					right: -3px
+					background-color: #00D8FF
+					+r(800)
+						top: 3px
+						left: -3px
+		&-05
+			position: absolute
+			bottom: 0px
+			left: -40px
+			width: 50%
+			height: 80px
+			text-align: right
+			padding-right: 40px
+			border-right: 2px solid #fff
+			// border-bottom: 2px solid #fff
+			+r(800)
+				&:before
+					content: ''
+					position: absolute
+					top: 30px
+					bottom: 30px
+					left: 0
+					width: 1px
+					height: auto
+					background-image: linear-gradient(top, transparent 0%,#c9d0d6 26%,#f7f7ff 89%,transparent 100%)
+			.road
+				&__point
+					top: -2px
+					right: -3px
+					background-color: #00FFD8
+					+r(800)
+						top: 3px
+						left: -3px
+		&-06
+			position: absolute
+			top: 0px
+			left: -3px
+			width: 50%
+			height: 80px
+			text-align: right
+			padding-right: 40px
+			+r(800)
+				&:before
+					content: ''
+					position: absolute
+					top: 30px
+					bottom: 30px
+					left: 0
+					width: 1px
+					height: auto
+					background-image: linear-gradient(top, transparent 0%,#c9d0d6 26%,#f7f7ff 89%,transparent 100%)
+			.road
+				&__point
+					top: -2px
+					right: -3px
+					background-color: #19C642
+					+r(800)
+						top: 3px
+						left: -3px
+		&-07
+			position: absolute
+			top: 0px
+			left: 50%
+			width: 38%
+			height: 80px
+			// border-top: 2px solid #fff
+			border-right: 2px solid #fff
+			&:before
+				content: ''
+				position: absolute
+				top: -2px
+				left: 40px
+				right: 30px
+				height: 2px
+				background-image: linear-gradient(left, transparent 0%,#c9d0d6 26%,#f7f7ff 89%,transparent 100%)
+				+r(800)
+					content: ''
+					position: absolute
+					top: 30px
+					bottom: 30px
+					left: 0
+					width: 1px
+					height: auto
+					background-image: linear-gradient(top, transparent 0%,#c9d0d6 26%,#f7f7ff 89%,transparent 100%)
+			.road
+				&__point
+					top: -2px
+					right: -3px
+					background-color: #B8FC00
+					+r(800)
+						top: 3px
+						left: -3px
+				&__text
+					position: absolute
+					top: 0
+					left: calc(100% + 43px)
+					width: 100%
+		&-08
+			position: absolute
+			top: 80px
+			left: calc(77% + 40px)
+			width: 50%
+			height: 80px
+			padding-left: 40px
+			// border-left: 2px solid #fff
+			&:before
+				content: ''
+				position: absolute
+				top: 30px
+				bottom: 30px
+				left: 0
+				width: 2px
+				background-image: linear-gradient(top, transparent 0%,#c9d0d6 26%,#f7f7ff 89%,transparent 100%)
+			.road
+				&__point
+					top: -2px
+					left: -3px
+					background-color: #F6E200
+					+r(800)
+						top: 3px
+						left: -3px
+		&-09
+			position: absolute
+			top: 160px
+			left: 38%
+			width: 50%
+			height: 80px
+			padding-right: 40px
+			text-align: right
+			// border-right: 2px solid #fff
+			&:before
+				content: ''
+				position: absolute
+				top: 30px
+				bottom: 30px
+				right: 0
+				width: 2px
+				background-image: linear-gradient(top, transparent 0%,#c9d0d6 26%,#f7f7ff 89%,transparent 100%)
+				+r(800)
+					content: none
+			.road
+				&__point
+					top: -2px
+					right: -3px
+					background-color: #DF5F19
+					+r(800)
+						top: 3px
+						left: -3px
+	&-bg
+		position: absolute
+		bottom: -0px
+		left: 50%
+		+trx(-50%)
+		// width: 100%
+		height: 50%
+		min-height: 600px
+		display: inline-block
+		// +r(800)
+		// 	display: none
+
+.box-black
+	background-color: rgba(7, 10, 19, .8)
+	border-radius: 16px
+	overflow: hidden
+	text-align: center
+
+.box-transparent
+	display: flex
+	align-items: center
+	justify-content: space-between
+	flex-wrap: wrap
+	margin-bottom: 100px
+	+r(800)
+		flex-direction: column
+		align-items: flex-start
+		margin-right: auto
+
+.team
+	position: relative
+
+// .bg-left
+// 	position: absolute
+// 	top: -60px
+// 	left: 0
+
+.people
+	display: inline-block
+	vertical-align: top
+	width: 32%
+	min-width: 280px
+	padding: 50px 25px
+	text-align: center
+	opacity: 0
+	transform: translateY(-100px)
+	+tr(.4s .8s)
+	+r(650)
+		width: 100%
+	&.is-animated
+		transform: translateY(0px)
+		opacity: 1
+	&_row
+		width: auto
+		display: flex
+		flex: 0 0 auto
+		align-items: center
+		padding: 0 10px 0 0
+		.people
+			&__pic
+				display: flex
+				flex: 0 0 78px
+				width: 78px
+				height: 78px
+			&__name
+				text-align: left
+			&__status
+				padding-left: 25px
+
+	&__pic
+		display: inline-block
+		vertical-align: top
+		position: relative
+		width: 100px
+		height: 100px
+		border-radius: 100%
+		background-color: #444
+		margin-bottom: 20px
+		overflow: hidden
+
+	&__img
+		+vcenter
+		min-width: 100%
+		width: 100%
+		border-radius: 100%
+	&__name
+		display: block
+		white-space: nowrap
+		// text-align: center
+		text-align: center
+		margin-bottom: 20px
+		+r(650)
+			white-space: normal
+	&__title
+		font-size: 22px
+		color: #ebebeb
+		+ar
+		font-weight: 600
+		padding-left: 25px
+		margin-bottom: 5px
+		&_social
+			display: inline-block
+			+tr(.4s)
+			&:hover
+				opacity: .8
+	&__status
+		text-transform: uppercase
+		color: #707070
+		font-size: 12px
+		+ar
+	&__info
+		font-size: 18px
+		color: #ebebeb
+		+ar
+
+.subscribe
+	position: relative
+	height: 415px
+	overflow: hidden
+	+r(650)
+		height: auto
+	&__box
+		position: relative
+		width: 96%
+		max-width: 506px
+		margin: 0 auto
+		padding: 50px 10px 0
+		text-align: center
+		z-index: 5
+	&__title
+		text-shadow: 0 0 30px #b4c1de
+		font-size: 32px
+		margin-bottom: 56px
+		letter-spacing: .02em
+		+ar
+	&__fieldset
+		position: relative
+		height: 46px
+		font-size: 0
+		+r(650)
+			height: auto
+		&.input--filled
+			.subscribe
+				&__label
+					font-size: 10px
+					color: #ccc
+					top: 8px
+				&__input
+					padding-top: 18px
+					&.has-error
+						box-shadow: 0 0 10px red
+						border: 1px solid red
+	&__form
+		text-align: left
+		color: #fff
+		margin-bottom: 80px
+	&__input
+		height: 46px
+		width: 272px
+		outline: none
+		border: 1px solid #4F5157
+		border-radius: 6px
+		background-color: #21242B
+		padding: 0 24px
+		margin-right: 16px
+		box-shadow: 0 0 14px rgba(255, 255, 255, .4)
+		font-size: 16px
+		color: #fff
+		+tr(.4s)
+		+r(650)
+			width: 100%
+			margin-bottom: 20px
+			height: 50px
+			text-align: center
+
+	&__label
+		position: absolute
+		left: 24px
+		top: 50%
+		font-size: 14px
+		font-weight: 300
+		+rr
+		+try(-50%)
+		+tr(.4s)
+		+r(650)
+			top: 24px
+			left: 50%
+			transform: translate(-50%, -50%)
+	&__submit
+		display: inline-block
+		height: 46px
+		width: 198px
+		box-shadow: 0 0 12px rgba(26, 75, 186, .6)
+		background-color: #1A4BBA
+		border: none
+		outline: none
+		text-transform: uppercase
+		text-align: center
+		letter-spacing: .06em
+		border-radius: 8px
+		font-size: 16px
+		color: #ede7f6
+		+rr
+		+r(650)
+			width: 100%
+			height: 62px
+	&-bg
+		+vcenter
+		min-width: 100%
+		min-height: 100%
+
+.social
+	width: 430px
+	max-width: 100%
+	display: flex
+	align-items: center
+	justify-content: space-between
+	margin: 0 auto
+	+r(650)
+		margin-bottom: 60px
+	+r(400)
+		flex-wrap: wrap
+		justify-content: center
+
+	&__btn
+		display: inline-block
+		position: relative
+		vertical-align: top
+		width: 50px
+		height: 50px
+		background-color: #1A5EBA
+		box-shadow: 0 0 10px 2px rgba(26, 94, 186, .9)
+		border-radius: 100%
+		cursor: pointer
+		+tr(.4s)
+		+r(650)
+			margin: 5px
+		&:hover
+			box-shadow: 0 0 5px 0px rgba(26, 94, 186, .9)
+	&__pic
+		+vcenter
+		max-width: 100%
+
+
+@keyframes flip
+	0%
+		transform: perspective(1000px) rotateY(0deg)
+		animation-timing-function: ease-in
+	25%
+		transform: perspective(1000px) rotateY(90deg)
+		animation-timing-function: ease-in
+	50%
+		transform: perspective(1000px) rotateY(180deg)
+	75%
+		transform: perspective(1000px) rotateY(270deg)
+	to
+		transform: perspective(1000px) rotateY(360deg)

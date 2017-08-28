@@ -1,0 +1,215 @@
+extends _layout
+block headScript
+
+block content
+	-var nav = ['Features', 'Roadmap', 'Team', 'Contact'];
+	-var mods = [ {item: {sdw: 'aquamarine', name: 'Gamplay'}}, {item: {sdw: 'red', name: 'Collection'}}, {item: {sdw: 'blue', name: 'Unique'}}, {item: {sdw: 'fiolet', name: 'Limited'}}, {item: {sdw: 'halk', name: 'Mining'}}, {item: {sdw: 'purpur', name: 'Blockchain'}}];
+
+	-var team = [{item: {pic: 'static/img/people/01.jpg', name: 'Иван Петров', status: 'FOUNDER & CEO', info: 'Операционная деятельность и ключевые стратегические решения в компании. '}}, {item: {pic: 'static/img/people/02.jpg', name: 'Константин Плавник ', status: 'CO-FOUNDER, CFO', info: 'Инвестиционный консультант, опыт в прямых инвестициях и корпоративных финансах более 10 лет.'}}, {item: {pic: 'static/img/people/03.jpg', name: 'Андрей Рыбушкин', status: 'PR&MARKETING DIRECTOR', info: 'Аккаунт-директор рекламного агентства, Болле 15 лет опыта в разработке, запуске и продвижении digital-проектов.'}}, {item: {pic: 'static/img/people/01.jpg', name: 'Иван Петров', status: 'FOUNDER & CEO'}}, {item: {pic: 'static/img/people/02.jpg', name: 'Константин Плавник ', status: 'CO-FOUNDER, CFO'}}, {item: {pic: 'static/img/people/03.jpg', name: 'Андрей Рыбушкин', status: 'PR&MARKETING DIRECTOR'}} ];
+
+	-var advisor = [{item: {pic: 'static/img/people/01.jpg', name: 'Иван Петров', status: 'FOUNDER & CEO'}}, {item: {pic: 'static/img/people/02.jpg', name: 'Константин Плавник ', status: 'CO-FOUNDER, CFO'}}, {item: {pic: 'static/img/people/03.jpg', name: 'Андрей Рыбушкин', status: 'PR&MARKETING DIRECTOR'}} ];
+
+	.out
+		include layout/header.pug
+		section.startscreen
+			section.intro.is-animated
+				a(href="index.html").logo
+					img(src="static/img/logo.png", alt="logo").logo__pic
+				p.intro__desc Коллекционный карточный батлер <br> на блокчейн с возможностью заработать  <br> для мобильных и настольных платформ
+
+			section.play.is-animated
+				.play__box
+					.play__pic
+						img(src="static/img/macbook.png", alt="macbook").play__img
+						img(src="static/img/card/01.png", alt="card").pocket.pocket-01
+						img(src="static/img/card/02.png", alt="card").pocket.pocket-02
+					.play__text
+						img(src="static/img/icon-gold.png").play__icon.shadow-navy
+						//- i.icon-gold
+						//- i.icon-in
+						p.play__desc Зарабатывай, <br> играя <br> на десктопе
+
+				.play__box
+					.play__pic
+						img(src="static/img/macbook.png", alt="macbook").play__img
+						img(src="static/img/card/01.png", alt="card").pocket.pocket-01
+						img(src="static/img/card/02.png", alt="card").pocket.pocket-02
+						img(src="static/img/card/phone.png", alt="card").pocket-phone
+					.play__text
+						img(src="static/img/45.png").play__icon.shadow-green
+						p.play__desc Играй <br> на мобильном <br> телефоне
+						.app
+							a(href="#").app__link
+								img(src="static/img/app-store.jpg").app__img
+							a(href="#").app__link
+								img(src="static/img/app-play.jpg").app__img
+
+		section.hell
+			section.about.layout.is-animated
+				h3.title-section
+					img(src="static/img/title/01.png").title-img.shadow-fiolet
+					span About
+				.card
+					.card__pic
+						img(src="static/img/about/01.png").card__img
+					.card__text
+						h5.title-medium Присоединяйся к битве!
+						p.card__desc Мир Ethernium раздирает бесконечная, разрушающая все на своем пути война. Коварные,беспощадные, легионы непобедимых демонов готовятся стереть с лица земли всё живое. В эпоху бесконечной войны выживание зависит только от вашей храбрости и победной стратегии…
+
+				.card
+					.card__pic
+						img(src="static/img/about/02.png")
+						img(src="static/img/about/02-1.png").card__pic_01
+					.card__text
+						h5.title-medium Выбери одну <br> из четырех фракций!
+						p.card__desc Мир Ethernium раздирает бесконечная, разрушающая все на своем пути война. Коварные,беспощадные, легионы непобедимых демонов готовятся стереть с лица земли всё живое. В эпоху бесконечной войны выживание зависит только от вашей храбрости и победной стратегии…
+				.card
+					.card__pic
+						img(src="static/img/about/03.png")
+					.card__text
+						h5.title-medium Призови героя возглавить <br> твое войско!
+						p.card__desc Пусть ваши войска сражаются бок о бок с сильнейшими героями. Закаленные в битвах храбрецы, чей уровень растет с каждым боем, могут применять заклинания, усиливать войска и вселять ужас в ваших врагов.
+				.card
+					.card__pic
+						img(src="static/img/about/04.png")
+					.card__text
+						h5.title-medium Прими участие в эпических <br> событиях!
+						p.card__desc Перед вашими глазами пройдут события целой исторической эпохи Ethernium.
+						p.card__desc В процессе прохождения сюжета вы узнаете о тайне открытия врат между мирами, трагическом уничтожении королевства эльфов, предательстве инквизитора Эриния (Erinyes) и битве всех королевств у врат гнева.
+			section.features.layout.is-animated
+				h3.title-section
+					img(src="static/img/title/02.png").title-img.shadow-blue
+					span Features
+				.module
+					each mod, index in mods
+						div(class="module__item shadow-" + mod.item.sdw)
+							.module__pic
+								img(src="static/img/pic/0"+(index+1)+".png" ,alt='feature', class="module__img shadow-" + mod.item.sdw)
+							.module__text
+								h5.title-medium #{mod.item.name}
+								p.module__text Простая и понятная система тактического боя.
+			section.roadmap.is-animated
+				.layout
+					h3.title-section
+						img(src="static/img/title/03.png").title-img.shadow-aquamarine
+						span Roadmap
+					.road
+						.road__top
+							.road__box.road__box-01
+								.road__point
+								.road__text
+									h6.road__title Июнь 2017
+									p.road__desc Идея проекта, разработка концепции
+							.road__box.road__box-02
+								.road__point
+								.road__text
+									h6.road__title Июль 2017
+									p.road__desc Сформирована команда проекта
+							.road__box.road__box-03
+								.road__point
+								.road__text
+									h6.road__title Август 2017
+									p.road__desc Начало разработки игры, pre-sale
+							.road__box.road__box-04
+								.road__point
+								.road__text
+									h6.road__title Октябрь 2017
+									p.road__desc Crowdsale
+							.road__box.road__box-05
+								.road__point
+								.road__text
+									h6.road__title Январь 2018
+									p.road__desc Демо build
+
+						.road__bottom
+							.road__box.road__box-06
+								.road__point
+								.road__text
+									h6.road__title Апрель 2018
+									p.road__desc Альфа-версия
+							.road__box.road__box-07
+								.road__point
+								.road__text
+									h6.road__title Июль 2018
+									p.road__desc Soft launch
+							.road__box.road__box-08
+								.road__point
+								.road__text
+									h6.road__title Октябрь 2018
+									p.road__desc Global launch
+							.road__box.road__box-09
+								.road__point
+								.road__text
+									h6.road__title Декабрь 2018
+									p.road__desc Запуск токенов
+
+						//- each tooltip, index in road
+						//- 	div(class="road__item " + 'road__item_0' + (index+1) )
+						//- 		.road__point
+						//- 		.road__box
+						//- 			strong.road__title #{tooltip.tool.title}
+						//- 			p.road__desc #{tooltip.tool.desc}
+				img(src="static/img/sun.png").road-bg
+			section.team.layout.is-animated
+				h3.title-section
+					img(src="static/img/title/04.png").title-img.shadow-yellow
+					span Team
+				.box-black
+					each people in team
+						if people.item.info
+							.people
+								.people__pic
+									img(src=people.item.pic, alt=people.item.status).people__img
+								.people__name
+									h6.people__title #{people.item.name}
+										a(href="#").people__title_social
+											img(src="static/img/title/icon-in.png").icon-in
+									.people__status #{people.item.status}
+								.people__info #{people.item.info}
+						else
+							.people.people_simple
+								.people__pic
+									img(src=people.item.pic, alt=people.item.status).people__img
+								.people__name
+									h6.people__title #{people.item.name}
+									.people__status #{people.item.status}
+			section.advisors.layout
+				h3.title-section
+					img(src="static/img/title/05.png").title-img.shadow-fiolet
+					span Advisors
+				.box-transparent
+					each people in advisor
+						.people.people_row
+							.people__pic
+								img(src=people.item.pic, alt=people.item.status).people__img
+							.people__name
+								h6.people__title #{people.item.name}
+									a(href="#").people__title_social
+										img(src="static/img/title/icon-in.png").icon-in
+								.people__status #{people.item.status}
+			section.subscribe
+				.subscribe__box
+					h6.subscribe__title Подпишитесь на новости
+					form(action="/", method="POST").subscribe__form.js-validate
+						fieldset.subscribe__fieldset
+							input(type="email", name="mail").subscribe__input
+							label(for="email").subscribe__label Введите почту
+							button(type='submit').subscribe__submit Подписаться
+					div.social
+						.social__btn.facebook
+							img(src="static/img/social/facebook.png", alt="").social__pic
+						.social__btn.vkontakte
+							img(src="static/img/social/vk.png", alt="").social__pic
+						.social__btn.youtube
+							img(src="static/img/social/youtube.png", alt="").social__pic
+						.social__btn.instagram
+							img(src="static/img/social/instagram.png", alt="").social__pic
+						.social__btn.telegram
+							img(src="static/img/social/telegramm.png", alt="").social__pic
+
+					//- .share
+						//- add Sapegin share
+
+				img(src="static/img/sub-bg.jpg", alt="").subscribe-bg
+
+		include layout/footer.pug
